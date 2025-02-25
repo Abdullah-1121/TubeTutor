@@ -1,0 +1,63 @@
+extract_video_content:
+  description: >
+    Extract and summarize key insights from the given video content, providing
+    structured data with relevant timestamps to highlight important moments.
+  expected_output: >
+    A structured transcript containing:
+    - Timestamped key insights
+    - Main topics discussed
+    - Important quotes or facts
+
+generate_lesson:
+  description: >
+    Convert the extracted transcript into a structured lesson that follows
+    an intuitive flow, ensuring clarity and knowledge retention.
+  expected_output: >
+    A well-structured lesson with:
+    - Introduction
+    - Core concepts explained in detail
+    - Real-world examples or applications
+    - Conclusion and key takeaways
+
+extract_key_points:
+  description: >
+    Identify and summarize the most important key points from the lesson,
+    ensuring they are clear, concise, and easy to understand.
+  expected_output: >
+    A structured list of key takeaways, formatted as:
+    - Bullet points summarizing main ideas
+    - Simple explanations for complex concepts
+    - Key facts in an easy-to-read format
+
+generate_summary:
+  description: >
+    Create a concise summary of the lesson, ensuring it captures the 
+    core message and key insights in a structured and easy-to-understand manner.
+  expected_output: >
+    A markdown-formatted summary with:
+    - Brief introduction
+    - Key insights in paragraph form
+    - Final thoughts and conclusion
+
+generate_quiz:
+  description: >
+    Create a quiz based on the lesson, including a mix of short-answer and 
+    multiple-choice questions to test understanding and reinforce learning.
+  expected_output: >
+    A markdown-formatted quiz containing:
+    - 3 to 5 short-answer questions
+    - 5 to 10 multiple-choice questions with clearly marked correct answers
+
+compile_chapter:
+  description: >
+    Compile all generated content into a well-structured textbook-style chapter,
+    formatted in Markdown, ensuring readability and logical flow.
+  expected_output: >
+    A complete Markdown document containing:
+    - Chapter title
+    - Lesson content
+    - Key takeaways
+    - Summary
+    - Quiz
+    - Visuals (if available)
+    - References and further reading

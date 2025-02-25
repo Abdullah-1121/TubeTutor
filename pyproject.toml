@@ -1,0 +1,28 @@
+[project]
+name = "researcher-flow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abdullah-1121", email = "muhmmad11abdullah21@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.102.0",
+    "crewai-tools>=0.36.0",
+    "rich>=13.9.4",
+    "streamlit>=1.42.2",
+    "youtube-transcript-api>=0.6.3",
+]
+
+[project.scripts]
+researcher-flow = "researcher_flow:main"
+kickoff = "researcher_flow.main:kickoff"
+plot = "researcher_flow.main:plot"
+test = "researcher_flow.main:test"
+train = "researcher_flow.main:train"
+server = "researcher_flow.main:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
